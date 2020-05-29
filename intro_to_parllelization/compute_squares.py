@@ -25,7 +25,7 @@ from multiprocessing import Pool
 # * Accordingly, it's very easy to do too much on each core and return too much
 # and exhaust system resources.
 # * Multiprocessing (within python) is not ALWAYS faster than serialization.
-# Going from one core to three cores does mean a three-fold decrease in
+# Going from one core to three cores doesn't mean a three-fold decrease in
 # execution time. This is because there is communication overhead between the
 # main core and the sub cores.
 # * It's important to think of your workflow in terms of user-defined functions
